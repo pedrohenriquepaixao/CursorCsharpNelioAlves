@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ExemploEnum.Entities;
+using ExemploEnum.Entities.Enums;
+using System;
 
 namespace ExemploEnum
 {
@@ -6,7 +8,20 @@ namespace ExemploEnum
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Order pedido = new Order
+            {
+                Id = 1,
+                Moment = DateTime.Now,
+                Status = OrderStatus.PendingPayment,
+            };
+
+            Console.WriteLine(pedido);
+
+            string txt = OrderStatus.PendingPayment.ToString();
+
+            OrderStatus os = Enum.Parse<OrderStatus>("Delivered");
+
+            Console.WriteLine(os);
         }
     }
 }
