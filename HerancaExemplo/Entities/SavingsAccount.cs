@@ -17,6 +17,11 @@ namespace HerancaExemplo.Entities
             InterestRate = interestRate;
         }
 
+        public override void Withdraw(double amount)
+        {
+            base.Withdraw(amount);
+            Balance -= 2.0;
+        }
         public void UpdateBalance()
         {
             Balance += Balance * InterestRate;
