@@ -4,7 +4,7 @@ using System.Text;
 
 namespace HerancaExemplo.Entities
 {
-    class SavingsAccount : Account
+    sealed class SavingsAccount : Account
     {
         public double InterestRate { get; set; }
 
@@ -17,7 +17,7 @@ namespace HerancaExemplo.Entities
             InterestRate = interestRate;
         }
 
-        public override void Withdraw(double amount)
+        public sealed override void Withdraw(double amount)
         {
             base.Withdraw(amount);
             Balance -= 2.0;
