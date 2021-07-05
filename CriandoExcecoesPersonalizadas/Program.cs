@@ -1,4 +1,5 @@
 ﻿using CriandoExcecoesPersonalizadas.Entities;
+using CriandoExcecoesPersonalizadas.Entities.Exceptions;
 using System;
 
 namespace CriandoExcecoesPersonalizadas
@@ -31,13 +32,10 @@ namespace CriandoExcecoesPersonalizadas
 
                 Console.WriteLine(reservation);
             }
-            catch(Exception e)
+            catch(DomainException e)
             {
                 Console.WriteLine($"ERROR: {e.Message}");
             }
-
-            
-
 
         }
     }

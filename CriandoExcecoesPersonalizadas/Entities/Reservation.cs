@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using CriandoExcecoesPersonalizadas.Entities.Exceptions;
 
 namespace CriandoExcecoesPersonalizadas.Entities
 {
@@ -18,6 +15,8 @@ namespace CriandoExcecoesPersonalizadas.Entities
 
         public Reservation(int roomNumber, DateTime checkIn, DateTime checkOut)
         {
+            if(checkOut <= checkIn) throw new DomainException("Check-out date must be after check-in date");
+
             RoomNumber = roomNumber;
             CheckIn = checkIn;
             CheckOut = checkOut;
@@ -31,15 +30,19 @@ namespace CriandoExcecoesPersonalizadas.Entities
 
         public void UpdateDates(DateTime checkIn,DateTime checkOut)
         {
-            if(checkIn > CheckIn && checkOut > checkIn)
+            DateTime now = DateTime.Now;
+            if (checkIn < now || checkOut < now)
             {
-                CheckIn = checkIn;
-                CheckOut = checkOut;
+                throw new DomainException("Reservation dates for update must be future dates");
             }
-            else
+
+            if(checkOut <= checkIn)
             {
-                throw new ArgumentNullException();
+                throw new DomainException("Check-out date must be after check-in date");
             }
+
+            CheckIn = checkIn;
+            CheckOut = checkOut;
         }
 
         public override string ToString()
