@@ -10,11 +10,6 @@ namespace ExercicioPropostoMetodosAbstratos.Entities
     {
         public double HealthExpenditures { get; set; }
 
-
-        public Individual()
-        {
-        }
-
         public Individual(string Name, double AnualIncome,double healthExpenditures) : base(Name,AnualIncome)
         {
             HealthExpenditures = healthExpenditures;

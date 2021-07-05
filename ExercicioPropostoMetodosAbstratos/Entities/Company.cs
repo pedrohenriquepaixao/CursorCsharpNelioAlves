@@ -10,6 +10,11 @@ namespace ExercicioPropostoMetodosAbstratos.Entities
     {
         public int NumberEmployees { get; set; }
 
+        public Company(string Name, double AnualIncome, int numberEmployees) :base(Name,AnualIncome)
+        {
+            NumberEmployees = numberEmployees;
+        }
+
         public override double TaxesPaid()
         {
             if (NumberEmployees > 10)

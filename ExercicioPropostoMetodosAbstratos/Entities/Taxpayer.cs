@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,6 +20,10 @@ namespace ExercicioPropostoMetodosAbstratos.Entities
 
         public abstract double TaxesPaid();
 
-       
-     }
+        public override string ToString()
+        {
+            return $"{Name}: $ {TaxesPaid().ToString("F2",CultureInfo.InvariantCulture)}";
+        }
+
+    }
 }
