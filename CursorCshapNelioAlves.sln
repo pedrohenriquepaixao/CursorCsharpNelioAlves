@@ -17,9 +17,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExercicioResolvidoHeranca",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExercicioPropostoHerenca", "ExercicioPropostoHerenca\ExercicioPropostoHerenca.csproj", "{AC6D16F0-543F-4403-954C-A673790998D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExercicioResolvidoMetodosAbstratos", "ExercicioResolvidoMetodosAbstratos\ExercicioResolvidoMetodosAbstratos.csproj", "{393EA823-6D90-474E-85D7-E6EEFF52B276}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExercicioResolvidoMetodosAbstratos", "ExercicioResolvidoMetodosAbstratos\ExercicioResolvidoMetodosAbstratos.csproj", "{393EA823-6D90-474E-85D7-E6EEFF52B276}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExercicioPropostoMetodosAbstratos", "ExercicioPropostoMetodosAbstratos\ExercicioPropostoMetodosAbstratos.csproj", "{0B9ABEB1-F0D3-449D-838F-075F05B34486}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExercicioPropostoMetodosAbstratos", "ExercicioPropostoMetodosAbstratos\ExercicioPropostoMetodosAbstratos.csproj", "{0B9ABEB1-F0D3-449D-838F-075F05B34486}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CriandoExcecoesPersonalizadas", "CriandoExcecoesPersonalizadas\CriandoExcecoesPersonalizadas.csproj", "{C92B89D6-C398-40EA-871C-AC92D56C001A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{0B9ABEB1-F0D3-449D-838F-075F05B34486}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B9ABEB1-F0D3-449D-838F-075F05B34486}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B9ABEB1-F0D3-449D-838F-075F05B34486}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C92B89D6-C398-40EA-871C-AC92D56C001A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C92B89D6-C398-40EA-871C-AC92D56C001A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C92B89D6-C398-40EA-871C-AC92D56C001A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C92B89D6-C398-40EA-871C-AC92D56C001A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
